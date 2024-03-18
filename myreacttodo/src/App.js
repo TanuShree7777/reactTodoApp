@@ -3,58 +3,66 @@ import './App.css';
 import Container from "react-bootstrap/Container"
 import { Row, Col, InputGroup, Button, FormControl } from "react-bootstrap"
 import { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-class App extends Component {
+import InterviewQues from './components/interviewQues';
 
-  
-  render() {
-    return (
-      <Container>
-        <Row>
-          <Col>
-            <InputGroup>
-              <FormControl placeholder='add item...'
-                size='lg'
-                value
-                onChange={() => { }}
-                aria-label="add something"
-                aria-describedby="basic-addon2"
+// class App extends Component {
+//   constructor(props) {
+//     super(props)
+//     this.state = {
+//       userInput: "",
+//       list: []
+//     }
+//   }
+//   addItem = () => {
+//     if (this.state.userInput !== "") {
+//       const userInput = {
+//         id: Math.random(),
+//         value: this.state.userInput
+//       }
+//       const list = [...this.state.list]
+//       list.push(userInput)
 
-              />
-              <InputGroup>
-                <Button
-                  variant='dark'
-                  className='mt-2'
-                  onClick={() => { }}>
-                  ADD
-                </Button>
-              </InputGroup>
-            </InputGroup>
-          </Col>
-        </Row>
-      </Container>
-    )
-  }
-}
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
+//       this.setState({ list, userInput: "" })
+//     }
+//   }
+
+//   render() {
+//     return (
+//       <Container>
+//         <Row>
+//           <Col>
+//             <InputGroup>
+//               <FormControl placeholder='add item...'
+//                 size='lg'
+//                 value={this.state.userInput}
+//                 // onChange={() => { }}
+//                 aria-label="add something"
+//                 aria-describedby="basic-addon2"
+
+//               />
+//               <InputGroup>
+//                 <Button
+//                   variant='dark'
+//                   className='mt-2'
+//                   onClick={() => { this.addItem() }}>
+//                   ADD
+//                 </Button>
+//               </InputGroup>
+//             </InputGroup>
+//           </Col>
+//         </Row>
+//       </Container>
+//     )
+//   }
 // }
+function App() {
+  return (
+   <>
+    <InterviewQues/>
+   </>
+  );
+}
 
 export default App;
