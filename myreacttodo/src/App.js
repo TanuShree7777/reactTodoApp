@@ -6,6 +6,8 @@ import { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import InterviewQues from './components/interviewQues';
+import IQ2 from './components/IQ2';
+import DynamicInputField from './components/DynamicInputField';
 
 // class App extends Component {
 //   constructor(props) {
@@ -59,9 +61,11 @@ import InterviewQues from './components/interviewQues';
 // }
 function App() {
   return (
-   <>
-    <InterviewQues/>
-   </>
+    <>
+      {/* <InterviewQues/> */}
+      {/* <IQ2 /> */}
+      <DynamicInputField />
+    </>
   );
 }
 
