@@ -8,6 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import InterviewQues from './components/interviewQues';
 import IQ2 from './components/IQ2';
 import DynamicInputField from './components/DynamicInputField';
+import Timer from './components/Timer';
 
 // class App extends Component {
 //   constructor(props) {
@@ -65,6 +66,7 @@ function App() {
       {/* <InterviewQues/> */}
       {/* <IQ2 /> */}
       <DynamicInputField />
+      <Timer/>
     </>
   );
 }
